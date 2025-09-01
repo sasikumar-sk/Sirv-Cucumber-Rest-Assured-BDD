@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-01T13:13:47 IST" name="Default suite" finished-at="2025-09-01T13:13:58 IST" duration-ms="11063">
+  <suite started-at="2025-09-01T18:38:55 IST" name="Default suite" finished-at="2025-09-01T18:38:56 IST" duration-ms="815">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@24aed80c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-01T13:13:47 IST" name="Default test" finished-at="2025-09-01T13:13:58 IST" duration-ms="11063">
+    <test started-at="2025-09-01T18:38:55 IST" name="Default test" finished-at="2025-09-01T18:38:56 IST" duration-ms="815">
       <class name="runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@24aed80c]" started-at="2025-09-01T13:13:47 IST" name="setUpClass" finished-at="2025-09-01T13:13:47 IST" duration-ms="674" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@24aed80c]" started-at="2025-09-01T18:38:55 IST" name="setUpClass" finished-at="2025-09-01T18:38:56 IST" duration-ms="574" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3c07e830]]>
+                <![CDATA[org.testng.TestRunner@4cc61eb1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@24aed80c]" started-at="2025-09-01T13:13:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-01T13:13:58 IST" duration-ms="10280" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@24aed80c]" started-at="2025-09-01T18:38:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-01T18:38:56 IST" duration-ms="163" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,10 +34,25 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The method get(String) is undefined for the type Config
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The method get(String) is undefined for the type Config
+
+at steps.SirvSteps.i_have_a_valid_token(SirvSteps.java:25)
+at ✽.I have a valid Sirv bearer token(file:///F:/My%20Workspace/sirv-api-bdd/src/test/resources/features/sirv_upload.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@24aed80c]" started-at="2025-09-01T13:13:58 IST" name="tearDownClass" finished-at="2025-09-01T13:13:58 IST" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@24aed80c]" started-at="2025-09-01T18:38:56 IST" name="tearDownClass" finished-at="2025-09-01T18:38:56 IST" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
