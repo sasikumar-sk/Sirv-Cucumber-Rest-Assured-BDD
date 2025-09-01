@@ -1,0 +1,5 @@
+support\Config.class
+steps\SirvSteps.class
+runner\TestRunner.class
+runner\JUnitTestRunner.class
+support\TokenManager.class
