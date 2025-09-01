@@ -19,9 +19,9 @@ import support.TokenManager;
 
 public class SirvSteps {
     private String bearer;
-    private String sirvPath;
-    private Path localPath;
-
+    private String sirvPath; 
+    
+    
     @io.cucumber.java.en.Given("I have a valid Sirv bearer token")
     public void i_have_a_valid_token() {
         RestAssured.baseURI = Config.get("baseUrl");
